@@ -8,10 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.proyect_grupo7.clases.Producto1
-import com.example.proyect_grupo7.controller.Producto1Controller
+import com.example.proyect_grupo7.controller.TortasController
 import com.google.android.material.textfield.TextInputEditText
 
-class Producto1AddActivity : AppCompatActivity() {
+class TortasAddActivity : AppCompatActivity() {
 
     private lateinit var txtName:TextInputEditText
     private lateinit var txtStock:TextInputEditText
@@ -21,7 +21,7 @@ class Producto1AddActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_producto1_add)
+        setContentView(R.layout.activity_tortas_add)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -35,7 +35,7 @@ class Producto1AddActivity : AppCompatActivity() {
         txtName = findViewById(R.id.txtName)
         txtStock =findViewById(R.id.txtStock)
         txtPrice =findViewById(R.id.txtPrice)
-        btnAdd =findViewById(R.id.btnAdd)
+        btnAdd =findViewById(R.id.btnAddT)
     }
     private fun initListeners(){
         btnAdd.setOnClickListener { grabar() }
@@ -48,7 +48,7 @@ class Producto1AddActivity : AppCompatActivity() {
 
         var bean=Producto1(0,name, stock, price)
 
-        var estado=Producto1Controller().save(bean)
+        var estado=TortasController().save(bean)
         if(estado > 0)
             showAlert("Producto Registrado")
         else

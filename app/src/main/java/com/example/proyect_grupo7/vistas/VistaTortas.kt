@@ -1,11 +1,11 @@
-package com.example.proyect_grupo7.adapter
+package com.example.proyect_grupo7.vistas
 
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyect_grupo7.R
 
-class VistaProducto1(item:View):RecyclerView.ViewHolder(item) {
+class VistaTortas(item:View):RecyclerView.ViewHolder(item) {
     lateinit var tvCode:TextView
     lateinit var tvName:TextView
     lateinit var tvStock:TextView

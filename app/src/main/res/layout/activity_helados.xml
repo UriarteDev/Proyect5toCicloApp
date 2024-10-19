@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Producto1Activity">
+    tools:context=".HeladosActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,13 +13,13 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btnAdd"
+            android:id="@+id/btnAddH"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/P1btn"/>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvProducto1"
+            android:id="@+id/rvHelados"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

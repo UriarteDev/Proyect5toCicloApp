@@ -6,11 +6,14 @@
     <string name="Mbtn3">Lista De Productos 3</string>
     <!--Producto 1-->
     <string name="P1btn">Agregar nuevo producto</string>
-    <string name="tvProducto1">Producto 1</string>
+    <string name="tvTortas">Torta</string>
+    <string name="tvHelados">Helados</string>
     <!--Productos-->
     <string name="tvCode">Codigo</string>
     <string name="tvName">Nombre</string>
     <string name="tvStock">Stock</string>
     <string name="tvPrice">Precio</string>
     <string name="btnAdd">Añadir</string>
+    <string name="btnUpdate">Actualizar</string>
+    <string name="btnDelete">Eliminar</string>
 </resources>

@@ -4,7 +4,7 @@ import android.content.ContentValues
 import com.example.proyect_grupo7.clases.Producto1
 import com.example.proyect_grupo7.data.InitDB
 
-class Producto1Controller {
+class TortasController {
 
     fun findAll():ArrayList<Producto1>{
         var lista=ArrayList<Producto1>()

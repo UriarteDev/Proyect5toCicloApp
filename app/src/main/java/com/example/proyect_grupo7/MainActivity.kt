@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun navigateToProducto1() {
-        val  intent = Intent(this, Producto1Activity::class.java)
+        val  intent = Intent(this, TortasActivity::class.java)
         startActivity(intent)
     }
 }
